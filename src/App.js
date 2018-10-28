@@ -7,8 +7,8 @@ const Person = ({ img, name, occupation, children }) => {
     <div className="person">
       <img src={url} alt="person img" />
       <div>
-        <h4>name :{name}</h4>
-        <h4>occupation :{occupation}</h4>
+        <h4>{name}</h4>
+        <h4>{occupation}</h4>
         {children}
       </div>
     </div>

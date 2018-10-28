@@ -6,7 +6,7 @@
 
 .person {
   background: #eeeeee;
-  width: 21rem;
+  width: 17rem;
   padding: 1rem;
   display: flex;
   margin: 2rem auto;
@@ -15,12 +15,15 @@
 }
 .person img {
   border-radius: 0.3rem;
-  margin-right: 1rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
 }
 .person h4 {
   text-transform: capitalize;
   margin: 0.5rem 0;
   letter-spacing: 0.15rem;
+  color: teal;
 }
 .person:hover {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
