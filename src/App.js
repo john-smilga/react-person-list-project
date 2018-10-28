@@ -19,17 +19,10 @@ const PersonList = () => {
     <section>
       <Person img="34" name="john" occupation="developer" />
       <Person img="22" name="bob" occupation="designer">
-        <div className="social-icons">
-          <span>
-            <i className="fab fa-facebook" />
-          </span>
-          <span>
-            <i className="fab fa-twitter" />
-          </span>
-          <span>
-            <i className="fab fa-instagram" />
-          </span>
-        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+          accusamus?
+        </p>
       </Person>
       <Person img="56" name="david" occupation="the boss" />
     </section>
