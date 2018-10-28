@@ -1,27 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+const Person = ({ img, name, occupation, children }) => {
+  const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
+  return (
+    <div className="person">
+      <img src={url} alt="person img" />
+      <div>
+        <h4>name :{name}</h4>
+        <h4>occupation :{occupation}</h4>
+        {children}
+      </div>
+    </div>
+  );
+};
+const PersonList = () => {
+  return (
+    <section>
+      <Person img="34" name="john" occupation="developer" />
+      <Person img="22" name="bob" occupation="designer">
+        <div className="social-icons">
+          <span>
+            <i className="fab fa-facebook" />
+          </span>
+          <span>
+            <i className="fab fa-twitter" />
+          </span>
+          <span>
+            <i className="fab fa-instagram" />
+          </span>
+        </div>
+      </Person>
+      <Person img="56" name="david" occupation="the boss" />
+    </section>
+  );
+};
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    return <PersonList />;
   }
 }
 
