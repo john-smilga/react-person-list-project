@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .person {
   background: #eeeeee;
@@ -33,4 +36,17 @@
   display: flex;
   justify-content: space-around;
   color: blue;
+}
+
+@media screen and (min-width: 768px) {
+  .person-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .person-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
