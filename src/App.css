@@ -8,7 +8,7 @@ body {
 }
 
 .person {
-  background: #eeeeee;
+  background: white;
   width: 17rem;
   padding: 1rem;
   margin: 2rem auto;
@@ -27,7 +27,7 @@ body {
   text-transform: capitalize;
   margin: 0.5rem 0;
   letter-spacing: 0.15rem;
-  color: teal;
+  color: blueviolet;
 }
 .person:hover {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
@@ -35,7 +35,7 @@ body {
 .social-icons {
   display: flex;
   justify-content: space-around;
-  color: blue;
+  color: red;
 }
 
 @media screen and (min-width: 768px) {
