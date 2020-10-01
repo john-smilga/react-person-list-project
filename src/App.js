@@ -17,14 +17,14 @@ const Person = ({ img, name, occupation, children }) => {
 const PersonList = () => {
   return (
     <section className="person-list">
-      <Person img="34" name="john" occupation="developer" />
-      <Person img="22" name="bob" occupation="designer">
+      <Person img="44" name="johny" occupation="pordeveloper" />
+      <Person img="25" name="bobs" occupation="jrdesigner">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
           accusamus?
         </p>
       </Person>
-      <Person img="56" name="david" occupation="the boss" />
+      <Person img="57" name="davidjacob" occupation="the boss" />
     </section>
   );
 };
